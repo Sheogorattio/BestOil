@@ -35,12 +35,20 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // PetrolButton
             // 
-            this.PetrolButton.Location = new System.Drawing.Point(64, 40);
+            this.PetrolButton.Location = new System.Drawing.Point(55, 72);
             this.PetrolButton.Name = "PetrolButton";
             this.PetrolButton.Size = new System.Drawing.Size(196, 76);
             this.PetrolButton.TabIndex = 0;
@@ -50,7 +58,7 @@
             // 
             // CafeButton
             // 
-            this.CafeButton.Location = new System.Drawing.Point(64, 122);
+            this.CafeButton.Location = new System.Drawing.Point(55, 71);
             this.CafeButton.Name = "CafeButton";
             this.CafeButton.Size = new System.Drawing.Size(196, 76);
             this.CafeButton.TabIndex = 0;
@@ -60,7 +68,7 @@
             // 
             // TotalButton
             // 
-            this.TotalButton.Location = new System.Drawing.Point(64, 204);
+            this.TotalButton.Location = new System.Drawing.Point(62, 79);
             this.TotalButton.Name = "TotalButton";
             this.TotalButton.Size = new System.Drawing.Size(196, 76);
             this.TotalButton.TabIndex = 0;
@@ -70,7 +78,7 @@
             // 
             // EditData
             // 
-            this.EditData.Location = new System.Drawing.Point(120, 305);
+            this.EditData.Location = new System.Drawing.Point(113, 305);
             this.EditData.Name = "EditData";
             this.EditData.Size = new System.Drawing.Size(75, 23);
             this.EditData.TabIndex = 1;
@@ -85,7 +93,7 @@
             this.exitToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(345, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(350, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip";
             // 
@@ -103,21 +111,67 @@
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(12, 31);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(329, 268);
+            this.tabControl1.TabIndex = 3;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.CafeButton);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(321, 239);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.PetrolButton);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(321, 239);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.TotalButton);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(321, 239);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 340);
+            this.ClientSize = new System.Drawing.Size(350, 333);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.EditData);
-            this.Controls.Add(this.TotalButton);
-            this.Controls.Add(this.CafeButton);
-            this.Controls.Add(this.PetrolButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +186,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
